@@ -1,0 +1,222 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+html { scroll-behavior: smooth; }
+
+/* NAVBAR */
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1A1A2E;
+  padding: 16px 40px;
+  z-index: 100;
+}
+.navbar .logo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #FFFFFF;
+}
+.navbar .nav-links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
+.navbar .nav-links a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+.navbar .nav-links a:hover {
+  color: #00C2A8;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .navbar .nav-links {
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+}
+
+/* PROFILE / HERO SECTION */
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #F5F5F7;
+  padding: 80px 20px;
+}
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #00C2A8;
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.profile h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: #1A1A2E;
+  margin-bottom: 8px;
+}
+.profile .role {
+  font-size: 16px;
+  color: #4A4A4A;
+}
+
+/* ABOUT ME SECTION */
+.about {
+  padding: 70px 20px;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+.about h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  color: #1A1A2E;
+  margin-bottom: 20px;
+}
+.about p {
+  font-size: 16px;
+  color: #4A4A4A;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* SKILLS SECTION */
+.skills {
+  padding: 70px 20px;
+  background-color: #1A1A2E;
+  text-align: center;
+}
+.skills h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.skill-badge {
+  background-color: #00C2A8;
+  color: #1A1A2E;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+/* PROJECTS SECTION */
+.projects {
+  padding: 70px 20px;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+.projects h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  color: #1A1A2E;
+  margin-bottom: 30px;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.project-card {
+  background-color: #F5F5F7;
+  padding: 28px;
+  border-radius: 12px;
+  text-align: left;
+}
+.project-card h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: #1A1A2E;
+  margin-bottom: 10px;
+}
+.project-card p {
+  font-size: 14px;
+  color: #4A4A4A;
+  margin-bottom: 14px;
+}
+.project-card a {
+  font-size: 14px;
+  color: #00C2A8;
+  text-decoration: none;
+  font-weight: 500;
+}
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+/* CONTACT SECTION */
+.contact {
+  padding: 70px 20px;
+  background-color: #1A1A2E;
+  text-align: center;
+}
+.contact h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+.contact p {
+  color: #CCCCCC;
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+.contact .contact-icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.contact .contact-icons a {
+  color: #00C2A8;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+.contact .contact-icons a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive: project cards stack on mobile */
+@media (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
