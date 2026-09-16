@@ -1,0 +1,99 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #F5F5F7;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.converter-card {
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  padding: 40px 32px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.converter-card h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #1A1A2E;
+  margin-bottom: 28px;
+}
+
+.converter-card label {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  color: #4A4A4A;
+  margin-bottom: 6px;
+  margin-top: 16px;
+}
+
+.converter-card input,
+.converter-card select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #DDDDDD;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+}
+
+.converter-card input:focus,
+.converter-card select:focus {
+  outline: none;
+  border-color: #00C2A8;
+}
+
+#convertBtn {
+  width: 100%;
+  margin-top: 24px;
+  padding: 14px;
+  background-color: #00C2A8;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+#convertBtn:hover {
+  background-color: #009e88;
+}
+
+.error-msg {
+  color: #E24C4C;
+  font-size: 14px;
+  margin-top: 14px;
+  min-height: 18px;
+}
+
+.result-box {
+  margin-top: 20px;
+  background-color: #F5F5F7;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: left;
+}
+.result-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  color: #1A1A2E;
+  padding: 6px 0;
+}
+.result-row span:first-child {
+  color: #4A4A4A;
+}
+
