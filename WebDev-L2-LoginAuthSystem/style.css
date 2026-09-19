@@ -1,0 +1,106 @@
+* { 
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; 
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #F5F5F7;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.hidden { display: none; }
+
+.auth-card {
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  padding: 40px 32px;
+  max-width: 360px;
+  width: 100%;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.auth-card h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #1A1A2E;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.auth-card label {
+  display: block;
+  font-size: 13px;
+  color: #4A4A4A;
+  margin-bottom: 6px;
+  margin-top: 14px;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #DDDDDD;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+}
+.auth-card input:focus {
+  outline: none;
+  border-color: #00C2A8;
+}
+
+.auth-card button {
+  width: 100%;
+  margin-top: 22px;
+  padding: 13px;
+  background-color: #00C2A8;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.auth-card button:hover {
+  background-color: #009e88;
+}
+
+.error-msg {
+  color: #E24C4C;
+  font-size: 13px;
+  margin-top: 12px;
+  min-height: 16px;
+}
+.success-msg {
+  color: #00C2A8;
+  font-size: 13px;
+  margin-top: 8px;
+  min-height: 16px;
+}
+
+.switch-text {
+  text-align: center;
+  font-size: 13px;
+  color: #4A4A4A;
+  margin-top: 18px;
+}
+.switch-text a {
+  color: #00C2A8;
+  text-decoration: none;
+  font-weight: 500;
+}
+.switch-text a:hover {
+  text-decoration: underline;
+}
+
+.welcome-msg {
+  text-align: center;
+  font-size: 15px;
+  color: #4A4A4A;
+  margin-bottom: 10px;
+}
