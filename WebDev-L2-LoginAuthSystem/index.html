@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auth System</title>
+
+<link rel="stylesheet" href="auth-style.css">
+</head>
+<body>
+
+  <!-- LOGIN VIEW -->
+  <div class="auth-card" id="loginView">
+    <h1>Login</h1>
+    <label for="loginUsername">Username / Email</label>
+    <input type="text" id="loginUsername" placeholder="Enter username">
+    <label for="loginPassword">Password</label>
+    <input type="password" id="loginPassword" placeholder="Enter password">
+    <div class="error-msg" id="loginError"></div>
+    <button id="loginBtn">Login</button>
+    <p class="switch-text">Don't have an account? <a href="#" id="showRegister">Register</a></p>
+  </div>
+
+  <!-- REGISTER VIEW -->
+  <div class="auth-card hidden" id="registerView">
+    <h1>Register</h1>
+    <label for="regUsername">Username / Email</label>
+    <input type="text" id="regUsername" placeholder="Choose a username">
+    <label for="regPassword">Password</label>
+    <input type="password" id="regPassword" placeholder="Min 8 chars, 1 number">
+    <div class="error-msg" id="regError"></div>
+    <div class="success-msg" id="regSuccess"></div>
+    <button id="registerBtn">Register</button>
+    <p class="switch-text">Already have an account? <a href="#" id="showLogin">Login</a></p>
+  </div>
+
+  <!-- DASHBOARD VIEW (protected) -->
+  <div class="auth-card hidden" id="dashboardView">
+    <h1>Dashboard</h1>
+    <p class="welcome-msg" id="welcomeMsg"></p>
+    <button id="logoutBtn">Logout</button>
+  </div>
+
+  <script src="auth-script.js"></script>
+</body>
+</html>
